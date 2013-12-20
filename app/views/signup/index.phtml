@@ -1,0 +1,24 @@
+<?php
+//app/views/signup/index.phtml
+
+use Phalcon\Tag; ?>
+
+<h2>Üye Kayıt Formu</h2>
+
+<?php echo Tag::form("signup/register"); ?>
+
+ <p>
+    <label for="name">Ad Soyad</label>
+    <?php echo Tag::textField("name") ?>
+ </p>
+
+ <p>
+    <label for="name">E-Mail</label>
+    <?php echo Tag::textField("email") ?>
+ </p>
+
+ <p>
+    <?php echo Tag::submitButton("Kayıt Ol") ?>
+ </p>
+
+</form>

@@ -1,0 +1,21 @@
+<?php
+
+//app/views/signup/register.phtml
+
+if($response== 1)
+{
+?>
+<div class="hata_yazisi"><?php echo $response_text;?></div>
+<?php } else { ?>
+<div class="onay_yazisi"><?php echo $response_text;?></div>
+<?php } ?>
+
+<style>
+
+.hata_yazisi{
+    color:red;
+}
+.onay_yazisi{
+    color:green;
+}
+</style>
